@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="566.0" prefWidth="1006.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.event_registration_system_pl.EventRegistration">
+   <children>
+      <ImageView fitHeight="566.0" fitWidth="1006.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../Users/rashi/Downloads/EVENT%20REGISTRATION%20(3).png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tb_Title" layoutX="227.0" layoutY="139.0" prefHeight="26.0" prefWidth="196.0" promptText="Title" />
+      <TextField fx:id="tb_searchEvent" layoutX="179.0" layoutY="441.0" prefHeight="26.0" prefWidth="223.0" promptText="Search Event " />
+      <TableView fx:id="table_Event" layoutX="488.0" layoutY="75.0" prefHeight="413.0" prefWidth="488.0">
+        <columns>
+          <TableColumn fx:id="clm_title" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="clm_type" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="clm_Date" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="clm_location" prefWidth="75.0" text="Location" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="btn_Home" layoutX="64.0" layoutY="32.0" mnemonicParsing="false" onAction="#MovetohomeScene" opacity="0.0" prefHeight="26.0" prefWidth="67.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_registerEvent" layoutX="336.0" layoutY="347.0" mnemonicParsing="false" onAction="#RegisterEvent" opacity="0.0" prefHeight="26.0" prefWidth="114.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="tb_Date" layoutX="227.0" layoutY="225.0" prefHeight="26.0" prefWidth="196.0" promptText="ex. (00/00/00)" />
+      <TextField fx:id="tb_Location" layoutX="227.0" layoutY="270.0" prefHeight="26.0" prefWidth="196.0" promptText="Location" />
+      <Button fx:id="btn_EventRoster" layoutX="148.0" layoutY="32.0" mnemonicParsing="false" onAction="#EventRosterScene" opacity="0.0" prefHeight="26.0" prefWidth="163.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <ComboBox fx:id="cmb_Type" layoutX="227.0" layoutY="180.0" prefHeight="26.0" prefWidth="196.0" promptText="Type" />
+      <Button fx:id="btn_delete" layoutX="210.0" layoutY="347.0" mnemonicParsing="false" onAction="#DeleteEvent" opacity="0.0" prefHeight="26.0" prefWidth="108.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_search" layoutX="409.0" layoutY="435.0" mnemonicParsing="false" onAction="#SearchEvent" opacity="0.0" prefHeight="38.0" prefWidth="47.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
